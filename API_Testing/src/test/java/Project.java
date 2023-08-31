@@ -61,7 +61,7 @@ public class Project {
     public void Login_with_invalid_password()
     {
         HashMap loginDetails = new HashMap();
-        loginDetails.put("email","merchant@foodis.com");
+        loginDetails.put("email","merchant@foodics.com");
         loginDetails.put("password", "198756");
         String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
@@ -82,7 +82,7 @@ public class Project {
     public void Login_with_invalid_token()
     {
         HashMap loginDetails = new HashMap();
-        loginDetails.put("email","merchant@foodis.com");
+        loginDetails.put("email","merchant@foodics.com");
         loginDetails.put("password", "123456");
         String bearerToken= "Lyz22cfYKMetFhKQybx";
 
