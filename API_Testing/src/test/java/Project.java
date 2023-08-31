@@ -21,10 +21,11 @@ public class Project {
         HashMap loginDetails = new HashMap();
         loginDetails.put("email","merchant@foodics.com");
         loginDetails.put("password", "123456");
-        loginDetails.put("token","Lyz22cfYKMetFhKQybx5HAmVimF1i0xO");
+        String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
                  given()
                 .contentType("application/json").body(loginDetails)
+                . headers("Authorization","Bearer"+bearerToken)
                 .when()
                 .post("https://pay2.foodics.dev/cp_internal/login")
                 .then()
@@ -41,10 +42,11 @@ public class Project {
         HashMap loginDetails = new HashMap();
         loginDetails.put("email","merchant@foodis.com");
         loginDetails.put("password", "123456");
-        loginDetails.put("token","Lyz22cfYKMetFhKQybx5HAmVimF1i0xO");
+        String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
                  given()
                 .contentType("application/json").body(loginDetails)
+                . headers("Authorization","Bearer"+bearerToken)
                 .when()
                 .post("https://pay2.foodics.dev/cp_internal/login")
                 .then()
@@ -61,10 +63,11 @@ public class Project {
         HashMap loginDetails = new HashMap();
         loginDetails.put("email","merchant@foodis.com");
         loginDetails.put("password", "198756");
-        loginDetails.put("token","Lyz22cfYKMetFhKQybx5HAmVimF1i0xO");
+        String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
                  given()
                 .contentType("application/json").body(loginDetails)
+                . headers("Authorization","Bearer"+bearerToken)
                 .when()
                 .post("https://pay2.foodics.dev/cp_internal/login")
                 .then()
@@ -81,10 +84,11 @@ public class Project {
         HashMap loginDetails = new HashMap();
         loginDetails.put("email","merchant@foodis.com");
         loginDetails.put("password", "123456");
-        loginDetails.put("token", "Lyz22cfYKMetFhrt5y65HAmVimF1i0xO");
+        String bearerToken= "Lyz22cfYKMetFhKQybx";
 
                  given()
                 .contentType("application/json").body(loginDetails)
+                . headers("Authorization","Bearer"+bearerToken)
                 .when()
                 .post("https://pay2.foodics.dev/cp_internal/login")
                 .then()
