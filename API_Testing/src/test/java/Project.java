@@ -1,5 +1,6 @@
 
 import com.github.scribejava.core.model.Response;
+import com.github.scribejava.core.model.Response;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -23,13 +24,14 @@ public class Project {
         loginDetails.put("password", "123456");
         String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
-                 given()
-                .contentType("application/json").body(loginDetails)
+             given()
+                .auth().basic("merchant@foodics.com","123456")
                 . headers("Authorization","Bearer"+bearerToken)
+
                 .when()
-                .post("https://pay2.foodics.dev/cp_internal/login")
+                     .get("https://pay2.foodics.dev/cp_internal/login")
                 .then()
-                .statusCode(200).log().all();
+                     .statusCode(200).log().all();
 
 
 
@@ -44,13 +46,14 @@ public class Project {
         loginDetails.put("password", "123456");
         String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
-                 given()
-                .contentType("application/json").body(loginDetails)
+        given()
+                .auth().basic("merchant@foods.com","123456")
                 . headers("Authorization","Bearer"+bearerToken)
+
                 .when()
-                .post("https://pay2.foodics.dev/cp_internal/login")
+                    .get("https://pay2.foodics.dev/cp_internal/login")
                 .then()
-                .statusCode(200).log().all();
+                      .statusCode(200).log().all();
 
 
 
@@ -65,15 +68,14 @@ public class Project {
         loginDetails.put("password", "198756");
         String bearerToken= "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO";
 
-                 given()
-                .contentType("application/json").body(loginDetails)
+        given()
+                .auth().basic("merchant@foodics.com","123")
                 . headers("Authorization","Bearer"+bearerToken)
+
                 .when()
-                .post("https://pay2.foodics.dev/cp_internal/login")
+                       .get("https://pay2.foodics.dev/cp_internal/login")
                 .then()
-                .statusCode(200).log().all();
-
-
+                        .statusCode(200).log().all();
 
     }
 
@@ -86,13 +88,14 @@ public class Project {
         loginDetails.put("password", "123456");
         String bearerToken= "Lyz22cfYKMetFhKQybx";
 
-                 given()
-                .contentType("application/json").body(loginDetails)
+        given()
+                .auth().basic("merchant@foodics.com","123456")
                 . headers("Authorization","Bearer"+bearerToken)
+
                 .when()
-                .post("https://pay2.foodics.dev/cp_internal/login")
+                        .get("https://pay2.foodics.dev/cp_internal/login")
                 .then()
-                .statusCode(200).log().all();
+                       .statusCode(200).log().all();
 
 
 
