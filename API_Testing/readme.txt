@@ -54,5 +54,3 @@ Rest Assured Assessment
         </dependency>
 
     </dependencies>
-
-4- please note that the server is down and it gives me different status code each time I run the code
